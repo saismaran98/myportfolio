@@ -420,10 +420,15 @@ display: none;
     /* Align contact info to the left on mobile */
   }
   #exp-body{
-    font-size: small;
+    font-size: x-small;
+    
+  }
+  #mobile-view-point{
+    font-size: xx-small;
   }
   .exp-list-point{
-    font-size: x-small;
+    font-size: xx-small;
+    margin-left: 15px;
   }
 
   footer {
