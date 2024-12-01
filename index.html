@@ -149,11 +149,34 @@
   
   <!-- JavaScript to handle the scroll functionality -->
   <script>
-    document.getElementById('scroll-to-exp').addEventListener('click', function () {
-      document.getElementById('experience-section').scrollIntoView({
-        behavior: 'smooth'
-      });
+ document.getElementById('scroll-to-exp').addEventListener('click', function () {
+    document.getElementById('experience-section').scrollIntoView({
+      behavior: 'smooth'
     });
+  });
+
+  // Handle stepper clicks
+  const steps = document.querySelectorAll('.step');
+  const experienceDetails = document.querySelectorAll('.experience-details');
+  const activeBar = document.querySelector('.active-bar');
+
+  steps.forEach(step => {
+    step.addEventListener('click', () => {
+      const stepNumber = step.getAttribute('data-step');
+
+      // Remove active class from all steps and details
+      steps.forEach(s => s.classList.remove('active'));
+      experienceDetails.forEach(d => d.classList.remove('active'));
+
+      // Add active class to clicked step and corresponding experience details
+      step.classList.add('active');
+      document.querySelector(`.experience-details[data-step="${stepNumber}"]`).classList.add('active');
+
+      // Update progress bar
+      const width = (stepNumber - 1) * 33.33; // For 4 steps, each step is 33.33%
+      activeBar.style.width = `${width}%`;
+    });
+  });
   </script>
 </body>
 </html>
