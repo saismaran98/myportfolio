@@ -345,7 +345,10 @@ footer {
   color: #4CAF50;
   /* Green hover effect */
 }
-
+#mobile-view{
+  display: none;
+  width: 100%;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer-grid {
@@ -434,5 +437,8 @@ display: none;
   footer {
     padding: 30px 20px;
   }
-
+  #mobile-view{
+    display: none;
+    width: 100%;
+  }
 }
