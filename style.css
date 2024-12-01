@@ -78,8 +78,8 @@ body {
 }
 
 .bio-card img {
-  width: 550px;
-  height: 220px;
+  width: 450px;
+  height: 180px;
   border-radius: 60%;
   margin-right: 20px;
 }
@@ -187,7 +187,7 @@ body {
   border-radius: 50%;
   background-color: #ddd;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -223,7 +223,7 @@ body {
 
 .experience-details {
   display: none;
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
   margin-top: 30px;
 }
@@ -231,7 +231,17 @@ body {
 .experience-details.active {
   display: block;
 }
-
+.exp-list-point{
+  margin-left: 2%;
+  margin-top: 15px;
+}
+hr {
+  border: none; /* Remove default border */
+  height: 5px; /* Line thickness */
+  background: linear-gradient(to right, green,rgb(6, 179, 6),rgb(0, 224, 0),rgb(193, 227, 193)); /* Rainbow gradient */
+  width: 100%; /* Full width of parent */
+  margin: 20px 0; /* Space around the line */
+}
 /* Footer Styling */
 footer {
   background-color: #333;
@@ -363,17 +373,15 @@ footer {
 
   /* Mobile adjustments for Bio Section */
   .bio-card {
+    display:flex;
+    align-items: center;
     height: fit-content;
-    flex-direction: column;
     align-items: center;
     padding: 20px;
   }
 
   .bio-card img {
-    width: 180px;
-    height: 180px;
-    margin-right: 0;
-    margin-bottom: 20px;
+display: none;
   }
 
   .bio-text h2 {
