@@ -419,6 +419,12 @@ display: none;
     align-items: flex-start;
     /* Align contact info to the left on mobile */
   }
+  #exp-body{
+    font-size: small;
+  }
+  .exp-list-point{
+    font-size: x-small;
+  }
 
   footer {
     padding: 30px 20px;
