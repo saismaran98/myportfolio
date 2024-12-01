@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+  
+  <div class="container">
+        <!-- Navbar -->
+<div class="navbar">
+    <a href="#" class="logo">SAISMARAN HOTA</a>
+    <ul class="nav-links">
+      <!-- <li><a href="#home">Home</a></li> -->
+      <li><a href="#experience-section" >Experience</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </div>
+    <!-- Bio Section (Card layout) -->
+    <div class="bio-card" style="margin-top: 60px;">
+      <img src="./assets/profile.jpg" alt="Profile Picture">
+      <div class="bio-text">
+        <h2>Sai</h2>
+        <p>Software Engineer | AI Enthusiast | Developer</p>
+        <div class="divider"></div>
+        <p>
+          Hello! I’m Sai, a passionate software engineer with a strong interest in artificial intelligence and software development. 
+          I have experience working on diverse projects, from web development to machine learning, and love exploring innovative technologies.
+        </p>
+        <!-- Download Resume Button -->
+       
+        <a href="./assets/updated_Resume.pdf" 
+        target="_blank"
+        download="Sai_Resume.pdf" 
+        class="download-btn" 
+        style="
+          padding: 12px 30px; 
+          font-size: 16px; 
+          color: #fff; 
+          background-color: #4CAF50; 
+          text-decoration: none; 
+          border-radius: 30px; 
+          border: 2px solid #36a039; 
+          transition: all 0.3s ease-in-out;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          display: inline-block;
+          text-align: center;
+        "
+        onmouseover="this.style.backgroundColor='#fff'; this.style.color='black'; this.style.boxShadow='0px 6px 10px rgba(0, 0, 0, 0.2)';" 
+        onmouseout="this.style.backgroundColor='#36a039'; this.style.color='#fff'; this.style.boxShadow='0px 4px 8px rgba(0, 0, 0, 0.1)';">
+        Download Resume
+     </a>
+     
+        <!-- Social Media Links -->
+        
+      </div>
+    </div>
+
+    <!-- Scroll to Experience Icon -->
+    <div class="scroll-to-experience" id="scroll-to-exp">
+      <i class="fas fa-arrow-down"></i>
+      <h3> see experience</h3>
+    </div>
+
+    <!-- Experience Section with Stepper -->
+    <div class="experience" id="experience-section">
+      <h2>Experience</h2>
+
+      <!-- Stepper Container -->
+      <div class="stepper-container">
+        <div class="step active" data-step="1">2020</div>
+        <div class="step" data-step="2">2021</div>
+        <div class="step" data-step="3">2022</div>
+        <div class="step" data-step="4">2023</div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="stepper-progress">
+        <div class="active-bar" style="width: 25%;">
+        </div>
+      </div>
+
+      <!-- Experience Details -->
+      <div class="experience-details active" data-step="1">
+        <h3>Software Developer at DEF Solutions</h3>
+        <p id="exp-body">Built and maintained dynamic websites for clients, focusing on performance and responsive design.</p>
+      </div>
+
+      <div class="experience-details" data-step="2">
+        <h3>AI Research Intern at ABC Labs</h3>
+        <p id="exp-body">Worked on deep learning models for natural language processing tasks. Published research on model optimization techniques.</p>
+      </div>
+
+      <div class="experience-details" data-step="3">
+        <h3>Machine Learning Engineer at XYZ Corp</h3>
+        <p id="exp-body">Developed and deployed machine learning models for predictive analytics. Collaborated with data scientists to optimize algorithms.</p>
+      </div>
+
+      <div class="experience-details" data-step="4">
+        <h3>Freelance Developer</h3>
+        <p id="exp-body">Worked on various freelance projects, focusing on web development and AI-powered applications.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+
+<footer id="footer">
+    <h3 style="margin-bottom: 2%;">ContactInfo: </h3> 
+    <!-- Footer grid container -->
+    <div class="footer-grid">
+     <!-- Social media links with icons and text (in one column) -->
+      <div class="socials">
+
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="fab fa-linkedin"></a>
+          <span>LinkedIn</span>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/yourprofile" target="_blank" class="fab fa-github"></a>
+          <span>GitHub</span>
+        </div>
+      </div>
+  
+      <!-- Contact details (email and phone) (in another column) -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:sai@example.com">sai@example.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+  <!-- JavaScript to handle the scroll functionality -->
+  <script>
+    document.getElementById('scroll-to-exp').addEventListener('click', function () {
+      document.getElementById('experience-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
