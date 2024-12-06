@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* Navbar Styling */
 .navbar {
   display: flex;
@@ -440,5 +441,24 @@ display: none;
   #mobile-view{
     display: none;
     width: 100%;
+  }
+  .experience{
+    width: fit-content;
+    
+  }
+  .step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15 px;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 }
